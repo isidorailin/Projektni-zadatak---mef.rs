@@ -8,23 +8,23 @@
 </head>
 <body>
     <div class="container">
-        <div class="nav-buttons">
+         <div class="nav-buttons">
             <button id="register-button">Napravite novi nalog</button>
             <button id="login-button">Prijavite se</button>
             <button id="events-button">Lista svih aktuelnih događaja</button>
             <button id="search-events-button">Pretraži događaje</button>
-        </div>
-
+       </div>
+       
         <!-- Registracija -->
         <div class="form-container" id="form-container" style="display: none;">
             <h1 id="form-title">Registracija</h1>
-            <form id="registration-form">
-                <label for="name">Ime i prezime:</label>
+             <form id="registration-form">
+                <label for="name" >Ime i prezime:</label>
                 <input type="text" id="name" name="name" placeholder="Ovde unesite ime i prezime">
                 <div class="error-message" id="name-error"></div>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Ovde unesite email">
+                <input  type="email" id="email" name="email" placeholder="Ovde unesite email">
                 <div class="error-message" id="email-error"></div>
 
                 <label for="phone">Telefon:</label>
@@ -37,9 +37,9 @@
 
                 <label for="confirm-password">Ponovljena lozinka:</label>
                 <input type="password" id="confirm-password" name="confirm-password" placeholder="Ovde unesite ponovljenu lozinku">
-                <div class="error-message" id="confirm-password-error"></div>
+                <div  class="error-message" id="confirm-password-error"></div>
 
-                <button type="submit">Registruj se</button>
+                <button id="registruj-se" type="submit">Registruj se</button>
             </form>
         </div>
 
@@ -53,7 +53,7 @@
                 <label for="login-password">Lozinka:</label>
                 <input type="password" id="login-password" name="login-password" placeholder="Ovde unesite lozinku">
 
-                <button type="submit">Prijavite se</button>
+                <button id="prijavi-se" type="submit">Prijavite se</button>
                 <div class="error-message" id="login-error"></div>
             </form>
         </div>
@@ -65,7 +65,7 @@
         </div>
 
         <!-- Pretraživanje događaja -->
-        <div class="form-container" id="search-events-container" style="display: none;">
+         <div class="form-container" id="search-events-container" style="display: none;">
             <h1>Pretraži događaje</h1>
             <form id="search-events-form">
                 <label for="search-query">Pretraži:</label>
@@ -79,6 +79,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="formeJs.js"></script>
     <script src="inputProvera.js"></script>
+    <script src="slanjeZahteva.js"></script>
 
 </body>
 </html>
